@@ -1,7 +1,7 @@
 services:
   es01:
     container_name: ragflow-es-01
-    image: elasticsearch/elasticsearch:${STACK_VERSION}
+    image: elasticsearch:8.14.0
     volumes:
       - esdata01:/usr/share/elasticsearch/data
     ports:
